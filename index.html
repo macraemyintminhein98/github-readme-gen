@@ -3,26 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub README Generator</title>
-    <meta name="description" content="Generate professional GitHub READMEs effortlessly.">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='50%25' y='50%25' font-size='90' text-anchor='middle' dominant-baseline='central'%3E🛠️%3C/text%3E%3C/svg%3E">
+    <title>APEX | README Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; background-color: #f6f8fa; color: #24292e; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
-        .container { background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 1px 3px rgba(27,31,35,.15); max-width: 600px; width: 90%; text-align: center; }
-        h1 { color: #0366d6; margin-bottom: 20px; font-size: 2em; }
-        p { line-height: 1.6; margin-bottom: 20px; }
-        .cta-button { display: inline-block; background-color: #28a745; color: white; padding: 12px 25px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 1.1em; transition: background-color 0.2s ease; }
-        .cta-button:hover { background-color: #218838; }
-        .footer { margin-top: 30px; font-size: 0.9em; color: #586069; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>🛠️ Professional GitHub README Generator</h1>
-        <p>Craft stunning and effective READMEs for your GitHub repositories in minutes. Focus on your code, we'll handle the docs.</p>
-        <p>Input project details, features, installation steps, and more, and receive a beautifully formatted Markdown README.</p>
-        <a href="#" class="cta-button">Get Started Now</a>
-        <p class="footer">Powered by APEX</p>
-    </div>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col justify-between">
+    <header class="bg-gray-800 p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gradient-to-r from-purple-400 to-pink-600">APEX / README-Gen</h1>
+            <nav>
+                <a href="#" class="text-gray-300 hover:text-white mx-2">Features</a>
+                <a href="#" class="text-gray-300 hover:text-white mx-2">Pricing</a>
+                <a href="#" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg transition-all duration-300">Get Started</a>
+            </nav>
+        </div>
+    </header>
+    <main class="flex-grow container mx-auto px-6 py-12 text-center">
+        <h2 class="text-5xl font-extrabold leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600 animate-pulse">
+            Elevate Your GitHub READMEs
+        </h2>
+        <p class="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
+            Instantly generate professional, customizable README.md files for your projects.
+            Effortless. Elegant. Essential.
+        </p>
+        <a href="#" class="bg-purple-600 hover:bg-purple-700 text-white text-lg font-bold px-8 py-4 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">Start Generating Now</a>
+    </main>
+    <footer class="bg-gray-800 p-6 text-center text-gray-400">
+        <p>&copy; <span id="year"></span> APEX. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
