@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>README.md Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+        <h1 class="text-3xl font-bold mb-6 text-center">README.md Generator</h1>
+        <p class="mb-6 text-center text-gray-600">Craft professional GitHub READMEs instantly!</p>
+        <form id="readmeForm" class="space-y-4">
+            <div>
+                <label for="projectName" class="block text-sm font-medium text-gray-700">Project Name</label>
+                <input type="text" id="projectName" name="projectName" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+            </div>
+            <div>
+                <label for="description" class="block text-sm font-medium text-gray-700">Description</label>
+                <textarea id="description" name="description" rows="3" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Generate README (Unlock for $9.99)</button>
+        </form>
+        <p class="mt-4 text-sm text-gray-500 text-center">More fields &amp; templates available instantly after purchase.</p>
+    </div>
+    <script>
+        document.getElementById('readmeForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Payment integration and README generation coming soon!');
+        });
+    </script>
+</body>
+</html>
