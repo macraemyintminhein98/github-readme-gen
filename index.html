@@ -3,39 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APEX | README Generator</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>README Builder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
         body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body class="bg-gray-900 text-white min-h-screen flex flex-col justify-between">
-    <header class="bg-gray-800 p-4 shadow-md">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-gradient-to-r from-purple-400 to-pink-600">APEX / README-Gen</h1>
-            <nav>
-                <a href="#" class="text-gray-300 hover:text-white mx-2">Features</a>
-                <a href="#" class="text-gray-300 hover:text-white mx-2">Pricing</a>
-                <a href="#" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg transition-all duration-300">Get Started</a>
-            </nav>
-        </div>
-    </header>
-    <main class="flex-grow container mx-auto px-6 py-12 text-center">
-        <h2 class="text-5xl font-extrabold leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600 animate-pulse">
-            Elevate Your GitHub READMEs
-        </h2>
-        <p class="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
-            Instantly generate professional, customizable README.md files for your projects.
-            Effortless. Elegant. Essential.
-        </p>
-        <a href="#" class="bg-purple-600 hover:bg-purple-700 text-white text-lg font-bold px-8 py-4 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">Start Generating Now</a>
-    </main>
-    <footer class="bg-gray-800 p-6 text-center text-gray-400">
-        <p>&copy; <span id="year"></span> APEX. All rights reserved.</p>
-    </footer>
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+<body class="bg-gray-900 text-gray-50 flex items-center justify-center min-h-screen p-4">
+    <div class="bg-gray-800 p-8 rounded-lg shadow-xl max-w-sm w-full text-center">
+        <h1 class="text-4xl font-bold mb-4 text-purple-400">README Builder</h1>
+        <p class="text-lg mb-6">Craft a perfect README.md in minutes.</p>
+        <form action="/api/generate-readme" method="POST">
+            <div class="mb-4">
+                <input type="text" name="projectName" placeholder="Project Name" class="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500">
+            </div>
+            <div class="mb-4">
+                <textarea name="description" placeholder="Description (brief overview)" rows="3" class="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+            </div>
+            <p class="text-sm text-gray-400 mb-6">Unlock advanced sections like Features, Usage, and License with a one-time purchase!</p>
+            <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded transition duration-200">
+                Generate Basic README - $9.99
+            </button>
+        </form>
+        <p class="text-sm text-gray-500 mt-6">&#xA9; 2024 APEX</p>
+    </div>
 </body>
 </html>
