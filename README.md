@@ -1,14 +1,10 @@
-# README Genius
+# GitHub README Generator
 
-Generate professional and visually appealing GitHub README files effortlessly. Simply provide your project details, and let README Genius craft a polished README for you. Save time and make your projects stand out!
+Create professional and customizable GitHub READMEs easily. Generate sections like installation, usage, contributing, and licensing with pre-defined templates or your own input.
 
-## Features:
+### Features:
+-   **Templates:** Quick start with popular README structures.
+-   **Customization:** Tailor sections to fit your project.
+-   **Markdown Output:** Ready-to-use `.md` file.
 
-*   **Quick Generation:** Create a comprehensive README in minutes.
-*   **User-Friendly Interface:** Easy-to-use form for input.
-*   **Markdown Output:** Get standard Markdown ready for GitHub.
-*   **Customization (Upcoming):** Future updates will include templates and more customization.
-
-## Get Started:
-
-Visit [github-readme-gen.vercel.app](https://github-readme-gen.vercel.app) to generate yours now!
+Perfect for developers, open-source contributors, and students who want to save time and make their projects shine.
