@@ -3,35 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>README.md Generator</title>
-    <meta name="description" content="Generate professional GitHub READMEs quickly and easily.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-    </style>
+    <title>README Gen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full text-center">
-        <h1 class="text-3xl font-bold mb-4">README.md Generator</h1>
-        <p class="text-gray-600 mb-6">Craft stellar READMEs for your GitHub projects in minutes.</p>
-        
-        <div class="mb-8">
-            <p class="text-lg font-semibold text-gray-800 mb-2">What you'll get:</p>
-            <ul class="list-disc list-inside text-left mx-auto max-w-xs text-gray-700">
-                <li>Customizable sections</li>
-                <li>Pre-defined templates</li>
-                <li>Professional markdown</li>
-            </ul>
-        </div>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-lg">
+        <h1 class="text-3xl font-bold text-center mb-6 text-gray-800">README Gen</h1>
+        <p class="text-center text-gray-600 mb-8">Professional READMEs in seconds.</p>
 
-        <div class="p-4 bg-yellow-50 rounded-md mb-6">
-            <p class="text-yellow-800">🌟 Start generating your perfect README now!</p>
-        </div>
+        <form id="readmeForm" class="space-y-4">
+            <div>
+                <label for="repoName" class="block text-sm font-medium text-gray-700">Repository Name</label>
+                <input type="text" id="repoName" name="repoName" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-blue-500 focus:border-blue-500">
+            </div>
+            <div>
+                <label for="description" class="block text-sm font-medium text-gray-700">Description</label>
+                <textarea id="description" name="description" rows="4" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-blue-500 focus:border-blue-500"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded-md font-semibold hover:bg-blue-700 transition duration-200">Generate README (Coming Soon)</button>
+        </form>
 
-        <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300 ease-in-out">
-            Get Started - $9.99
-        </a>
-        <p class="text-sm text-gray-500 mt-4">One-time payment. Instant access.</p>
+        <p class="mt-8 text-center text-gray-500 text-sm">This is a preview. Full functionality including payment and generation will be available soon!</p>
     </div>
 </body>
 </html>
