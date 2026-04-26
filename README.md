@@ -1,10 +1,11 @@
-# GitHub README Generator
+# APEX GitHub README Generator
 
-Create professional and customizable GitHub READMEs easily. Generate sections like installation, usage, contributing, and licensing with pre-defined templates or your own input.
+Generate professional and visually appealing GitHub READMEs effortlessly. 
 
-### Features:
--   **Templates:** Quick start with popular README structures.
--   **Customization:** Tailor sections to fit your project.
--   **Markdown Output:** Ready-to-use `.md` file.
+## Features:
+- Simple form-based input
+- Sections for project title, description, features, installation, usage, contributing, and license.
+- Automatic badge generation.
+- Easy copy-to-clipboard functionality for generated Markdown.
 
-Perfect for developers, open-source contributors, and students who want to save time and make their projects shine.
+Elevate your project's first impression with a polished README in minutes!
