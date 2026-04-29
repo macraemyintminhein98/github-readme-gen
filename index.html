@@ -1,1 +1,63 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>APEX - GitHub README Generator</title><link rel="stylesheet" href="/css/style.css"></head><body><div class="container"><h1>GitHub README Generator</h1><p>Craft professional READMEs effortlessly.</p><form id="readme-form"><input type="text" id="project-title" placeholder="Project Title" required><textarea id="description" placeholder="Description" required></textarea><textarea id="features" placeholder="Features (one per line)"></textarea><textarea id="installation" placeholder="Installation steps"></textarea><textarea id="usage" placeholder="Usage examples"></textarea><textarea id="contributing" placeholder="Contributing guidelines"></textarea><input type="text" id="license" placeholder="License (e.g., MIT)"><div class="button-group"><button type="submit">Generate & Pay</button></div></form><div id="output" style="display:none;"><textarea id="generated-readme" readonly></textarea><button onclick="copyToClipboard()">Copy to Clipboard</button></div></div><script src="/js/script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>README Genius - GitHub README Generator</title>
+    <meta name="description" content="Generate professional GitHub READMEs effortlessly.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-900 text-white flex flex-col min-h-screen">
+    <header class="p-6 bg-gray-800 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">README Genius</h1>
+            <nav>
+                <a href="#" class="text-gray-300 hover:text-white mr-4">Features</a>
+                <a href="#" class="text-gray-300 hover:text-white mr-4">Templates</a>
+                <a href="#" class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Get Started</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-6 py-12 text-center">
+        <section class="max-w-4xl mx-auto mb-16">
+            <h2 class="text-5xl font-extrabold mb-6 leading-tight">
+                Craft Stellar GitHub READMEs in Minutes
+            </h2>
+            <p class="text-xl text-gray-300 mb-8">
+                Elevate your projects with professional, engaging READMEs. Choose templates, add details, and generate!
+            </p>
+            <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                Generate Your README Now
+            </button>
+        </section>
+
+        <section class="grid md:grid-cols-3 gap-8 mb-16">
+            <div class="bg-gray-800 p-8 rounded-lg shadow-xl">
+                <h3 class="text-2xl font-bold mb-4 text-purple-400">🚀 Fast & Easy</h3>
+                <p class="text-gray-300">Quickly fill out forms and select a template. No more manual Markdown!</p>
+            </div>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-xl">
+                <h3 class="text-2xl font-bold mb-4 text-pink-400">✨ Professional Templates</h3>
+                <p class="text-gray-300">Choose from a library of modern, eye-catching designs tailored for developers.</p>
+            </div>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-xl">
+                <h3 class="text-2xl font-bold mb-4 text-teal-400">✍️ Fully Customizable</h3>
+                <p class="text-gray-300">Add project name, description, features, installation, usage, and more.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="p-6 bg-gray-800 mt-auto">
+        <div class="container mx-auto text-center text-gray-400">
+            &copy; 2023 README Genius. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
