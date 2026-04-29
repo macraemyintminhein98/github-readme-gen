@@ -1,15 +1,30 @@
-# APEX GitHub README Generator
+# GitHub README Generator
 
-Instantly create professional and comprehensive GitHub README files. Streamline your project documentation with customizable templates, support for key sections (installation, usage, contributors, license), and badge integration. Get your README ready in minutes, not hours.
+Generate professional GitHub README files with ease.
 
-## Features
+This is the frontend component of our Micro-SaaS for generating customizable and polished READMEs. 
 
-- **Quick Generation**: Fill out a simple form, get a complete README.
-- **Customizable Sections**: Include installation, usage, contributors, license, and more.
-- **Badge Integration**: Easily add common project badges.
-- **Markdown Output**: Copy-paste your generated README directly to GitHub.
-- **User-Friendly Interface**: Designed for developers of all skill levels.
+## Features:
 
-## Get Started
+- **Project Title & Description**
+- **Features List**
+- **Installation & Usage**
+- **Contributing Guidelines**
+- **License Information**
+- **Badges (planned for backend)**
 
-Visit our web application, fill in your project details, and generate your professional README today!
+## Getting Started:
+
+Simply fill out the form, generate your README, and copy the Markdown output. 
+
+## Technologies:
+
+- HTML
+- CSS
+- JavaScript
+- Stripe (for payment processing)
+- Next.js (backend API - not included in this repo)
+
+## Development:
+
+This repository contains the static HTML/CSS/JS for the client-side form. The actual README generation and payment processing occur via a Next.js backend API.
