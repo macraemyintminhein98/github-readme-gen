@@ -1,30 +1,11 @@
-# GitHub README Generator
+# README Genius
 
-Generate professional GitHub README files with ease.
+Generate professional and eye-catching GitHub README.md files effortlessly. 
 
-This is the frontend component of our Micro-SaaS for generating customizable and polished READMEs. 
+**Features:**
+- Intuitive form-based input
+- Multiple pre-designed templates
+- Customizable sections (project name, description, features, installation, usage, contributors, license)
+- Instant Markdown generation
 
-## Features:
-
-- **Project Title & Description**
-- **Features List**
-- **Installation & Usage**
-- **Contributing Guidelines**
-- **License Information**
-- **Badges (planned for backend)**
-
-## Getting Started:
-
-Simply fill out the form, generate your README, and copy the Markdown output. 
-
-## Technologies:
-
-- HTML
-- CSS
-- JavaScript
-- Stripe (for payment processing)
-- Next.js (backend API - not included in this repo)
-
-## Development:
-
-This repository contains the static HTML/CSS/JS for the client-side form. The actual README generation and payment processing occur via a Next.js backend API.
+Save time and make your projects stand out!
